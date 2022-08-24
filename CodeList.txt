@@ -1,0 +1,43 @@
+Power
+address=0x7F80, command=0xED12
+
+ARC
+address=0x7F80, command=0xE11E
+
+Output A:
+	IN1
+	address=0x7F80, command=0xFE01
+
+	IN2
+	address=0x7F80, command=0xFD02
+
+	IN3
+	address=0x7F80, command=0xFC03
+
+	IN4
+	address=0x7F80, command=0xF906
+
+	Left
+	address=0x7F80, command=0xFB04
+
+	Right
+	address=0x7F80, command=0xFA05
+
+Output B:
+	IN1
+	address=0x7F80, command=0xF50A
+
+	IN2
+	address=0x7F80, command=0xE41B
+
+	IN3
+	address=0x7F80, command=0xE01F
+
+	IN4
+	address=0x7F80, command=0xF10E
+
+	Left
+	address=0x7F80, command=0xF30C
+
+	Right
+	address=0x7F80, command=0xF20D
