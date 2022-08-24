@@ -1,0 +1,137 @@
+esphome:
+  name: ir-command-transmitter
+
+esp32:
+  board: nodemcu-32s
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: ""
+
+ota:
+  password: ""
+
+wifi:
+  ssid: "Your Network Name"
+  password: "the password"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Ir-Command-Transmitter"
+    password: "FsGV5DeHoisu"
+
+web_server:
+  port: 80
+
+remote_transmitter:
+  pin: GPIO25
+  # Infrared remotes use a 50% carrier signal
+  carrier_duty_percent: 50%
+  
+  
+switch:
+  - platform: template
+    name: Power
+    turn_on_action:
+      - remote_transmitter.transmit_nec:
+          address: 0x7F80
+          command: 0xED12
+        
+  - platform: template
+    name: ARC
+    turn_on_action:
+      - remote_transmitter.transmit_nec:
+          address: 0x7F80
+          command: 0xE11E
+        
+  - platform: template
+    name: A Input 1
+    turn_on_action:
+      - remote_transmitter.transmit_nec:
+          address: 0x7F80
+          command: 0xFE01
+        
+  - platform: template
+    name: A Input 2
+    turn_on_action:
+      - remote_transmitter.transmit_nec:
+          address: 0x7F80
+          command: 0xFE02
+        
+  - platform: template
+    name: A Input 3
+    turn_on_action:
+      - remote_transmitter.transmit_nec:
+          address: 0x7F80
+          command: 0xFE03
+        
+  - platform: template
+    name: A Input 4
+    turn_on_action:
+      - remote_transmitter.transmit_nec:
+          address: 0x7F80
+          command: 0xFE06
+        
+  - platform: template
+    name: A Left
+    turn_on_action:
+      - remote_transmitter.transmit_nec:
+          address: 0x7F80
+          command: 0xFB04
+        
+  - platform: template
+    name: A Right
+    turn_on_action:
+      - remote_transmitter.transmit_nec:
+          address: 0x7F80
+          command: 0xFB05
+        
+  - platform: template
+    name: B Input 1
+    turn_on_action:
+      - remote_transmitter.transmit_nec:
+          address: 0x7F80
+          command: 0xF50A
+        
+  - platform: template
+    name: B Input 2
+    turn_on_action:
+      - remote_transmitter.transmit_nec:
+          address: 0x7F80
+          command: 0xE41B
+        
+  - platform: template
+    name: B Input 3
+    turn_on_action:
+      - remote_transmitter.transmit_nec:
+          address: 0x7F80
+          command: 0xE01F
+        
+  - platform: template
+    name: B Input 4
+    turn_on_action:
+      - remote_transmitter.transmit_nec:
+          address: 0x7F80
+          command: 0xF10E
+        
+  - platform: template
+    name: B Left
+    turn_on_action:
+      - remote_transmitter.transmit_nec:
+          address: 0x7F80
+          command: 0xF30C
+        
+  - platform: template
+    name: B Right
+    turn_on_action:
+      - remote_transmitter.transmit_nec:
+          address: 0x7F80
+          command: 0xF20D
+
+captive_portal:
+    
