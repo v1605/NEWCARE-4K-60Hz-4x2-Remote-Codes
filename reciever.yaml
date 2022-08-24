@@ -1,0 +1,41 @@
+esphome:
+  name: ir-command-reciever
+
+esp32:
+  board: nodemcu-32s
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: ""
+
+ota:
+  password: ""
+
+wifi:
+  ssid: "Your Network"
+  password: "Your Password"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Ir-Command-Reciever"
+    password: "FsGV5DeHoisu"
+
+web_server:
+  port: 80
+
+remote_receiver:
+  pin: 
+    number: GPIO0
+    inverted: true
+    mode:
+        input: true
+        pullup: true
+  dump: all
+
+captive_portal:
+    
