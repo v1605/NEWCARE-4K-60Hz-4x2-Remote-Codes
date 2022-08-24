@@ -50,84 +50,84 @@ switch:
           command: 0xE11E
         
   - platform: template
-    name: A Input 1
+    name: HDMI A Input 1
     turn_on_action:
       - remote_transmitter.transmit_nec:
           address: 0x7F80
           command: 0xFE01
         
   - platform: template
-    name: A Input 2
+    name: HDMI A Input 2
     turn_on_action:
       - remote_transmitter.transmit_nec:
           address: 0x7F80
           command: 0xFD02
         
   - platform: template
-    name: A Input 3
+    name: HDMI A Input 3
     turn_on_action:
       - remote_transmitter.transmit_nec:
           address: 0x7F80
           command: 0xFC03
         
   - platform: template
-    name: A Input 4
+    name: HDMI A Input 4
     turn_on_action:
       - remote_transmitter.transmit_nec:
           address: 0x7F80
           command: 0xF906
         
   - platform: template
-    name: A Left
+    name: HDMI A Left
     turn_on_action:
       - remote_transmitter.transmit_nec:
           address: 0x7F80
           command: 0xFB04
         
   - platform: template
-    name: A Right
+    name: HDMI A Right
     turn_on_action:
       - remote_transmitter.transmit_nec:
           address: 0x7F80
           command: 0xFB05
         
   - platform: template
-    name: B Input 1
+    name: HDMI B Input 1
     turn_on_action:
       - remote_transmitter.transmit_nec:
           address: 0x7F80
-          command: 0xFA05
+          command: 0xF50A
         
   - platform: template
-    name: B Input 2
+    name: HDMI B Input 2
     turn_on_action:
       - remote_transmitter.transmit_nec:
           address: 0x7F80
           command: 0xE41B
         
   - platform: template
-    name: B Input 3
+    name: HDMI B Input 3
     turn_on_action:
       - remote_transmitter.transmit_nec:
           address: 0x7F80
           command: 0xE01F
         
   - platform: template
-    name: B Input 4
+    name: HDMI B Input 4
     turn_on_action:
       - remote_transmitter.transmit_nec:
           address: 0x7F80
           command: 0xF10E
         
   - platform: template
-    name: B Left
+    name: HDMI B Left
     turn_on_action:
       - remote_transmitter.transmit_nec:
           address: 0x7F80
           command: 0xF30C
         
   - platform: template
-    name: B Right
+    name: HDMI B Right
     turn_on_action:
       - remote_transmitter.transmit_nec:
           address: 0x7F80
