@@ -61,21 +61,21 @@ switch:
     turn_on_action:
       - remote_transmitter.transmit_nec:
           address: 0x7F80
-          command: 0xFE02
+          command: 0xFD02
         
   - platform: template
     name: A Input 3
     turn_on_action:
       - remote_transmitter.transmit_nec:
           address: 0x7F80
-          command: 0xFE03
+          command: 0xFC03
         
   - platform: template
     name: A Input 4
     turn_on_action:
       - remote_transmitter.transmit_nec:
           address: 0x7F80
-          command: 0xFE06
+          command: 0xF906
         
   - platform: template
     name: A Left
@@ -96,7 +96,7 @@ switch:
     turn_on_action:
       - remote_transmitter.transmit_nec:
           address: 0x7F80
-          command: 0xF50A
+          command: 0xFA05
         
   - platform: template
     name: B Input 2
