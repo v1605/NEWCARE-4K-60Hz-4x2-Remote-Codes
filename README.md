@@ -3,4 +3,4 @@ This repository contains the NEC Codes for the NEWCARE 4K@60Hz 4x2 Remote Contro
 
 These codes were dirived directly from the included remote using an ESP32 and IR reciever.
 
-The trasmitter.yaml is an example showing how to use these codes via EspHome (using a NodeMCU ESP32).
+The trasmitter.yaml is an example showing how to use these codes via EspHome (using a NodeMCU ESP32). Using EspHome is probably the simpliest way to automate this type of switch or other ir capable device.
